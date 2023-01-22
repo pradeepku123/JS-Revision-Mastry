@@ -28,3 +28,9 @@ function findFact(num) {
 }
 
 console.log(findFact(3));
+
+// Function  Hoisting
+powerOfNumber(4, 2);
+function powerOfNumber(number, toPower) {
+  console.log(number ** toPower);
+}
