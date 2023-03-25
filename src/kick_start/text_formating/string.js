@@ -31,3 +31,8 @@ console.log(hex_string.length);
 //String Literal Character Access
 
 console.log(str_object[1]);
+
+//String Literal Character Access
+
+console.log(str_variables.charAt(2));
+console.log(str_variables.charCodeAt(0));
