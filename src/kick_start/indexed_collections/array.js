@@ -21,3 +21,31 @@ console.log(arr2, arr2.length);
 
 const arr3 = Array.of("Single Element");
 console.log(arr3, arr3.length);
+
+let newA = ["GI", "AS", "CI", "DE", "LG"];
+console.log(typeof newA);
+
+newA.forEach((ele) => {
+  console.log(`Element ${ele}`);
+});
+console.log(newA.join("-"));
+
+console.log(newA.push("KT"));
+console.log(newA);
+console.log(newA.pop());
+console.log(newA);
+console.log(newA.at(-1));
+// Reverse a String
+let revString = "MyString".split("").reverse().join("");
+console.log(revString);
+
+console.log(newA);
+console.log(newA.sort());
+
+console.log(
+  newA.sort((a, b) => {
+    if (a < b) return 1;
+    else if (a > b) return -1;
+    else if (a == b) return 0;
+  })
+);
