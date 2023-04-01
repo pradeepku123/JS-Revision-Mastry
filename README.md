@@ -9,3 +9,7 @@
 - Text Formating
     - Stings
       - String Literals
+## Keyed Collections
+ - MAP
+    - its soimple key/value pairs iterate over insertion order
+    
