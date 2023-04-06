@@ -21,8 +21,6 @@ let romanToInt = function (s) {
     if (romanObj[romanNum[i]] < romanObj[romanNum[i + 1]]) {
       total += romanObj[romanNum[i + 1]] - romanObj[romanNum[i]];
       i++;
-    } else if (romanObj[romanNum[i]] > romanObj[romanNum[i + 1]]) {
-      total += romanObj[romanNum[i]];
     } else {
       total += romanObj[romanNum[i]];
     }
