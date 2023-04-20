@@ -29,6 +29,8 @@ const myCarProperty = {
   place: "BAM",
   size: "23",
 };
+//Delting Object Properties {size}
+delete myCarProperty.size;
 
 Object.keys(myCarProperty).forEach((i) => {
   console.log(myCarProperty[i]);
