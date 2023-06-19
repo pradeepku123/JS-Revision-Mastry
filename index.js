@@ -1,5 +1,5 @@
 /**
  * Setup Dev Explorer
  */
-// import "./src/kick_start/class_exp/constructor.js";
+import "./src/kick_start/missle/range_func.js";
 console.log(`Welcome to index.js`);
