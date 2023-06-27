@@ -26,8 +26,39 @@ bikes
 // pop() will remove last element & return & its changes the operateed array
 
 let result = bikes.pop();
-result = bikes.pop();
-result = bikes.pop();
+
+//push() add new element end of Array
+
+result = bikes.push("NewBikes"); // Push new element & return length of Array
+
+//shift() move first element & return it.
+
+result = bikes.shift(); // return Shifted Array
+
+//unshfit() move first Element & return length
+
+result = bikes.unshift("NewBikesUnshift"); // return its length
+// delete array[index];
+// delete bikes[1]; // Deleter & set Holos to Array
+
+// Concat  Join two Array add Multiple Array to Single Array Without modifing Original Array
+result = bikes.concat(cbikes, [1, 2, 3], [2, 3, 4]);
+
+// sort();
+cbikes = ["weight", "Arrival", "zone", "inter"];
+result = cbikes.sort(); // By default sort() Asending Order
+console.log(result.join());
+// Sort() Descending Order
+result = cbikes.sort((a, b) => {
+  if (a < b) {
+    return 1;
+  }
+  if (a > b) {
+    return -1;
+  } else {
+    return 0;
+  }
+});
 
 /**
  * Array Stack Printed
@@ -36,6 +67,6 @@ console.log(`----------------------------------------------------------------`);
 console.log(`Array {Bikes} size: ${bikes.length}`);
 console.log(`Array {CBikes} elements: | ${cbikes.join(" | ")} |`);
 console.log(`Array {Bikes} elements: | ${bikes.join(" | ")} |`);
-console.log(`Result: | ${result}`);
+console.log(`Result: ${result}`);
 
 console.log(`================================================================`);
