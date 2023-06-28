@@ -48,7 +48,7 @@ result = bikes.concat(cbikes, [1, 2, 3], [2, 3, 4]);
 cbikes = ["weight", "Arrival", "zone", "inter"];
 result = cbikes.sort(); // By default sort() Asending Order
 console.log(result.join());
-// Sort() Descending Order
+// Sort(comareFunction) Descending Order
 result = cbikes.sort((a, b) => {
   if (a < b) {
     return 1;
@@ -59,6 +59,13 @@ result = cbikes.sort((a, b) => {
     return 0;
   }
 });
+/**
+ * Array.splice(index,howMany, items);
+ * add & remove Array elements overWride Orignial Array
+ */
+console.log(`Before:`, bikes);
+bikes.splice(1, 5, 22, 22, 45); //replace 2 Element start from index 1
+console.log("After:", bikes);
 
 /**
  * Array Stack Printed
