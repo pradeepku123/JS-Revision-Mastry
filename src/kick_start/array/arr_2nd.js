@@ -35,6 +35,27 @@ result = finIn.findIndex((ele) => {
 
 result = finIn.includes("log");
 
+// array.entries() return array iterator Object with keys/values pairs
+result = finIn.entries();
+for (let [key, val] of result) {
+  console.log(key, val);
+}
+// arg.every(()=> {retrun true})
+
+result = finIn.every((ele) => {
+  return null;
+});
+
+// Some() Atleat one Of Element Match
+
+console.log([...finIn]);
+result = finIn.some((ele) => {
+  console.log(ele);
+  return ele === "log";
+});
+console.log(finIn);
+result = finIn.fill("A");
+console.log(finIn);
 console.log(`================================================================`);
 console.log(`bikes: ${[...ele]}`);
 console.log(`Result:`, result);
