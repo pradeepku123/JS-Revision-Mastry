@@ -15,7 +15,25 @@ console.log(ele.reverse().join());
 result = Array.isArray(ele); // find passed argument was an array or not.
 let finIn = ["error", "One", "Seven", "warning", "One", "log", "Math"];
 
-result = finIn.indexOf("One", 0);
+result = finIn.indexOf("One", 0); // Search for left -> right
+result = finIn.lastIndexOf("One", -1); // Search Right -> Left
+
+// find(()=>{}) find Element & return if not match the function then Return "undefind"
+// Find "One"
+
+result = finIn.find((ele) => {
+  return ele === "One";
+  //   return ele === "O_n_e"; // Not matched & return "undefind" only
+});
+
+// firstIndex(()=>{}) return index if function call Satisfied otherwise return "-1"
+result = finIn.findIndex((ele) => {
+  return ele === "log";
+});
+
+// array.includes('arg') return true if 'arg' available in the <array>
+
+result = finIn.includes("log");
 
 console.log(`================================================================`);
 console.log(`bikes: ${[...ele]}`);
